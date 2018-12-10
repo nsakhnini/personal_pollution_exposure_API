@@ -1,0 +1,6 @@
+{
+  "AccessKeyID": "Access Key ID",
+  "SecretKey": "Secret Key",
+  "Region": "us-east-1",
+  "Table":"citymeter-mobilehub-636316455-calibration"
+}
