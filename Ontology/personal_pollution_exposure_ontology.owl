@@ -1,0 +1,924 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://nsakhn2.people.uic.edu/Ontology/personal_pollution_exposure"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://nsakhn2.people.uic.edu/Ontology/personal_pollution_exposure">
+    <Prefix name="geo" IRI="https://www.w3.org/2003/01/geo/wgs84_pos#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="ssn" IRI="https://www.w3.org/2005/Incubator/ssn/ssnx/ssn"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="wthr" IRI="https://ci.mines-stetienne.fr/seas/WeatherOntology-0.9#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="en">This is work a part of the project submitted for fulfilment of the UIC CS 586: Data and Web Semantics Class for Fall 2018. This ontology represents the data for personal pollution exposure. Personal Pollution Exposure is the exact pollution values at a certain context. The pollution values initially are PM 2.5 and Noise, but, in the future any values can be included as well. The context includes, but not limited to, temporal and spatial information, weather condition, and microenvironment (such as outdoor, indoor, etc). The ontology builds upon the SSN ontology of W3C. The ontology represent a more context-rich knowledge to give richer semantics to sensor data. Personal pollution exposure can be collected using sensors mounted on a wearable device or using built-in smartphone sensors. This, also, is not limited and an be expanded in the future.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <Literal xml:lang="en">The tool to communicate raw data to the ontology:
+https://github.com/nsakhnini/personal_pollution_exposure_API</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal xml:lang="en">This is still a skeleton given the current state of the personal pollution exposure we are working on.</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Abdomen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Arm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Battery_Life"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Components"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Computing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Computing_Capabilities"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Confidence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ears"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Exposure_Context"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Exposure_Object"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Eyes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fingers"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Foot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hand"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Head"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Human_Body_Association"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Human_Body_Parts"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Knee"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Leg"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Location"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lower_Arm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lower_Leg"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MAC_Address"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Materials"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MicroEnvironment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Microenvironment_Value"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mouth"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Neck"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Noise"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nose"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PM2.5"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pollutants"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Processor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RAM"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sensor_Accuracy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sensor_Datasheet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sensor_Rate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sensors"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Size"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Smartphone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Thigh"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Timestamp"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Top"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Type"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Unit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Upper_Arm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Value"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wearable"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wearable_Form_Factor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Weather"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Weight"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wrist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#latitude"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#longitude"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/2006/time#DayOfWeek"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/2006/time#Instant"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="wthr:AirTemperature"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="wthr:WeatherPhenomenon"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="wthr:WindDirection"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="wthr:WindSpeed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://www.w3.org/2005/Incubator/ssn/ssnx/ssnDeployment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasComputer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDeployment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMaterial"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSensor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isWorn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#measures"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasHeight"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLength"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasNumericalValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasStringValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasWidth"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Abdomen"/>
+        <Class IRI="#Human_Body_Parts"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Arm"/>
+        <Class IRI="#Human_Body_Parts"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Battery_Life"/>
+        <Class IRI="#Computing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chest"/>
+        <Class IRI="#Human_Body_Parts"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Components"/>
+        <Class IRI="#Smartphone"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Components"/>
+        <Class IRI="#Wearable"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Computing_Capabilities"/>
+        <Class IRI="#Components"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Confidence"/>
+        <Class IRI="#MicroEnvironment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ears"/>
+        <Class IRI="#Head"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Exposure_Context"/>
+        <Class IRI="#Exposure_Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Eyes"/>
+        <Class IRI="#Head"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fingers"/>
+        <Class IRI="#Hand"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Foot"/>
+        <Class IRI="#Leg"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hand"/>
+        <Class IRI="#Arm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Head"/>
+        <Class IRI="#Human_Body_Parts"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Human_Body_Association"/>
+        <Class IRI="#Wearable_Form_Factor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Knee"/>
+        <Class IRI="#Leg"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Leg"/>
+        <Class IRI="#Human_Body_Parts"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Location"/>
+        <Class IRI="#Exposure_Context"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lower_Arm"/>
+        <Class IRI="#Arm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lower_Leg"/>
+        <Class IRI="#Leg"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MAC_Address"/>
+        <Class IRI="#Computing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MicroEnvironment"/>
+        <Class IRI="#Exposure_Context"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Microenvironment_Value"/>
+        <Class IRI="#MicroEnvironment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mouth"/>
+        <Class IRI="#Head"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Neck"/>
+        <Class IRI="#Head"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Noise"/>
+        <Class IRI="#Pollutants"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nose"/>
+        <Class IRI="#Head"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PM2.5"/>
+        <Class IRI="#Pollutants"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pollutants"/>
+        <Class IRI="#Exposure_Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Processor"/>
+        <Class IRI="#Computing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RAM"/>
+        <Class IRI="#Computing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sensor_Accuracy"/>
+        <Class IRI="#Sensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sensor_Datasheet"/>
+        <Class IRI="#Sensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sensor_Rate"/>
+        <Class IRI="#Sensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sensors"/>
+        <Class IRI="#Components"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Size"/>
+        <Class IRI="#Wearable_Form_Factor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Smartphone"/>
+        <Class IRI="https://www.w3.org/2005/Incubator/ssn/ssnx/ssnDeployment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Thigh"/>
+        <Class IRI="#Leg"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Timestamp"/>
+        <Class IRI="#Exposure_Context"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Top"/>
+        <Class IRI="#Head"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Type"/>
+        <Class IRI="#Sensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Type"/>
+        <Class IRI="#Smartphone"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Type"/>
+        <Class IRI="#Wearable"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Unit"/>
+        <Class IRI="#Noise"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Unit"/>
+        <Class IRI="#PM2.5"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Upper_Arm"/>
+        <Class IRI="#Arm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Value"/>
+        <Class IRI="#Noise"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Value"/>
+        <Class IRI="#PM2.5"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wearable"/>
+        <Class IRI="https://www.w3.org/2005/Incubator/ssn/ssnx/ssnDeployment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wearable_Form_Factor"/>
+        <Class IRI="#Wearable"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Weather"/>
+        <Class IRI="#Exposure_Context"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Weight"/>
+        <Class IRI="#Wearable_Form_Factor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wrist"/>
+        <Class IRI="#Arm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#latitude"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#longitude"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/2006/time#DayOfWeek"/>
+        <Class IRI="#Timestamp"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/2006/time#Instant"/>
+        <Class IRI="#Timestamp"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="wthr:AirTemperature"/>
+        <Class IRI="#Weather"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="wthr:WeatherPhenomenon"/>
+        <Class IRI="#Weather"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="wthr:WindDirection"/>
+        <Class IRI="#Weather"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="wthr:WindSpeed"/>
+        <Class IRI="#Weather"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Abdomen"/>
+        <Class IRI="#Arm"/>
+        <Class IRI="#Chest"/>
+        <Class IRI="#Head"/>
+        <Class IRI="#Leg"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Battery_Life"/>
+        <Class IRI="#MAC_Address"/>
+        <Class IRI="#Processor"/>
+        <Class IRI="#RAM"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Components"/>
+        <Class IRI="#Type"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Components"/>
+        <Class IRI="#Type"/>
+        <Class IRI="#Wearable_Form_Factor"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Computing"/>
+        <Class IRI="#Exposure_Object"/>
+        <Class IRI="#Human_Body_Parts"/>
+        <Class IRI="#Materials"/>
+        <Class IRI="#Sensor"/>
+        <Class IRI="https://www.w3.org/2005/Incubator/ssn/ssnx/ssnDeployment"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Computing_Capabilities"/>
+        <Class IRI="#Sensors"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Confidence"/>
+        <Class IRI="#Microenvironment_Value"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Confidence"/>
+        <Class IRI="#Value"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Ears"/>
+        <Class IRI="#Eyes"/>
+        <Class IRI="#Mouth"/>
+        <Class IRI="#Neck"/>
+        <Class IRI="#Nose"/>
+        <Class IRI="#Top"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Exposure_Context"/>
+        <Class IRI="#Pollutants"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Foot"/>
+        <Class IRI="#Knee"/>
+        <Class IRI="#Lower_Leg"/>
+        <Class IRI="#Thigh"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Hand"/>
+        <Class IRI="#Lower_Arm"/>
+        <Class IRI="#Upper_Arm"/>
+        <Class IRI="#Wrist"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Location"/>
+        <Class IRI="#MicroEnvironment"/>
+        <Class IRI="#Timestamp"/>
+        <Class IRI="#Weather"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Noise"/>
+        <Class IRI="#PM2.5"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Sensor_Accuracy"/>
+        <Class IRI="#Sensor_Datasheet"/>
+        <Class IRI="#Sensor_Rate"/>
+        <Class IRI="#Type"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Smartphone"/>
+        <Class IRI="#Wearable"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Unit"/>
+        <Class IRI="#Value"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#latitude"/>
+        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#longitude"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.w3.org/2006/time#DayOfWeek"/>
+        <Class IRI="http://www.w3.org/2006/time#Instant"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="wthr:AirTemperature"/>
+        <Class abbreviatedIRI="wthr:WeatherPhenomenon"/>
+        <Class abbreviatedIRI="wthr:WindDirection"/>
+        <Class abbreviatedIRI="wthr:WindSpeed"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasComputer"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isWorn"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasComputer"/>
+        <Class IRI="#Computing_Capabilities"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDeployment"/>
+        <Class IRI="#Sensor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMaterial"/>
+        <Class IRI="#Wearable_Form_Factor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSensor"/>
+        <Class IRI="#Sensors"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isWorn"/>
+        <Class IRI="#Human_Body_Association"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#measures"/>
+        <Class IRI="#Type"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasComputer"/>
+        <Class IRI="#Computing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDeployment"/>
+        <Class IRI="https://www.w3.org/2005/Incubator/ssn/ssnx/ssnDeployment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMaterial"/>
+        <Class IRI="#Materials"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isSensor"/>
+        <Class IRI="#Sensor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isWorn"/>
+        <Class IRI="#Human_Body_Parts"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#measures"/>
+        <Class IRI="#Pollutants"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLength"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasNumericalValue"/>
+        <DataProperty IRI="#hasValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasStringValue"/>
+        <DataProperty IRI="#hasValue"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasHeight"/>
+        <Class IRI="#Size"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLength"/>
+        <Class IRI="#Size"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasNumericalValue"/>
+        <Class IRI="#Confidence"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasNumericalValue"/>
+        <Class IRI="#Sensor_Accuracy"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasNumericalValue"/>
+        <Class IRI="#Sensor_Rate"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasNumericalValue"/>
+        <Class IRI="#Value"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasNumericalValue"/>
+        <Class IRI="#Weight"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasNumericalValue"/>
+        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#latitude"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasNumericalValue"/>
+        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#longitude"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasNumericalValue"/>
+        <Class abbreviatedIRI="wthr:AirTemperature"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasNumericalValue"/>
+        <Class abbreviatedIRI="wthr:WindDirection"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasNumericalValue"/>
+        <Class abbreviatedIRI="wthr:WindSpeed"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasStringValue"/>
+        <Class IRI="#Sensor_Datasheet"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasStringValue"/>
+        <Class IRI="#Type"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasStringValue"/>
+        <Class IRI="#Unit"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasWidth"/>
+        <Class IRI="#Size"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasHeight"/>
+        <Datatype abbreviatedIRI="owl:real"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLength"/>
+        <Datatype abbreviatedIRI="owl:real"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasNumericalValue"/>
+        <Datatype abbreviatedIRI="owl:real"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasStringValue"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasWidth"/>
+        <Datatype abbreviatedIRI="owl:real"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Confidence</IRI>
+        <Literal xml:lang="en">To record how confident is the microenvironment value recorded.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Exposure_Context</IRI>
+        <Literal xml:lang="en">A class to describe the context of an Exposure instance.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Exposure_Object</IRI>
+        <Literal xml:lang="en">An instance of a collection of values to describepollution at a certain point of context</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Human_Body_Parts</IRI>
+        <Literal xml:lang="en">This is an incomplete class. Just a place holder.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Location</IRI>
+        <Literal xml:lang="en">Location of where the Exposure happened. Represented by two subclasses: longitude and latitude.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Materials</IRI>
+        <Literal xml:lang="en">This is incomplete. A place holder.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MicroEnvironment</IRI>
+        <Literal xml:lang="en">To represent MicroEnvironment of an exposure instance. A microenvironment can be one of the following:
+- Indoor
+- Outdoor
+- Semi-Outdoor
+- Deep Indoor
+Since the microenvironment is not yet an established entriprise and still in research, The ontology also records confidence values for the decided microenvironment.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Microenvironment_Value</IRI>
+        <Literal xml:lang="en">To keep the values of microenvironment.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Noise</IRI>
+        <Literal xml:lang="en">A class to describe noise pollution.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PM2.5</IRI>
+        <Literal xml:lang="en">A class to describe PM 2.5 pollution.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Pollutants</IRI>
+        <Literal xml:lang="en">A class of all measured pollutants, values, and their units</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Timestamp</IRI>
+        <Literal xml:lang="en">To keep time instances.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Unit</IRI>
+        <Literal xml:lang="en">Pollutant&apos;s unit.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Value</IRI>
+        <Literal xml:lang="en">Pollutant&apos;s value.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Weather</IRI>
+        <Literal xml:lang="en">To denote the weather condition at a certain exposure instance.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasComputer</IRI>
+        <Literal>To specify computing power of a device</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasDeployment</IRI>
+        <Literal>Where and how is a sensor deployed?</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasHeight</IRI>
+        <Literal xml:lang="en">Determine height</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasLength</IRI>
+        <Literal xml:lang="en">Determine Length</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasMaterial</IRI>
+        <Literal xml:lang="en">To denote what material is an object created of.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasNumericalValue</IRI>
+        <Literal xml:lang="en">Property to set numerical values</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasStringValue</IRI>
+        <Literal xml:lang="en">Property to set string values</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasValue</IRI>
+        <Literal xml:lang="en">Property to set values</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasWidth</IRI>
+        <Literal xml:lang="en">Determine Width</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isSensor</IRI>
+        <Literal>Matching a sensor with details about it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isWorn</IRI>
+        <Literal xml:lang="en">What part of a Human Body is it worn on?</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#measures</IRI>
+        <Literal>What does a sensor of a certain type measures?</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.w3.org/2003/01/geo/wgs84_pos#latitude</IRI>
+        <Literal xml:lang="en">Instances of this class represent numerical values to represent the latitude component of a location.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.w3.org/2003/01/geo/wgs84_pos#longitude</IRI>
+        <Literal xml:lang="en">Instances of this class represent numerical values to represent the longitude component of a location.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.w3.org/2006/time#DayOfWeek</IRI>
+        <Literal xml:lang="en">The name of that day.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.w3.org/2006/time#Instant</IRI>
+        <Literal xml:lang="en">A time instant.</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6.2018-09-06T00:27:41Z) https://github.com/owlcs/owlapi -->
+
