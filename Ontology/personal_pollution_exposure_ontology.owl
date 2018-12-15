@@ -6,6 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://nsakhn2.people.uic.edu/Ontology/personal_pollution_exposure">
+    <Prefix name="" IRI="http://nsakhn2.people.uic.edu/Ontology/personal_pollution_exposure"/>
     <Prefix name="geo" IRI="https://www.w3.org/2003/01/geo/wgs84_pos#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
@@ -28,16 +29,7 @@ https://github.com/nsakhnini/personal_pollution_exposure_API</Literal>
         <Literal xml:lang="en">This is still a skeleton given the current state of the personal pollution exposure we are working on.</Literal>
     </Annotation>
     <Declaration>
-        <Class IRI="#Abdomen"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Arm"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Battery_Life"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Chest"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Components"/>
@@ -52,28 +44,10 @@ https://github.com/nsakhnini/personal_pollution_exposure_API</Literal>
         <Class IRI="#Confidence"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Ears"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Exposure_Context"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Exposure_Object"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Eyes"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Fingers"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Foot"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Hand"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Head"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Human_Body_Association"/>
@@ -82,19 +56,7 @@ https://github.com/nsakhnini/personal_pollution_exposure_API</Literal>
         <Class IRI="#Human_Body_Parts"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Knee"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Leg"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Location"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Lower_Arm"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Lower_Leg"/>
     </Declaration>
     <Declaration>
         <Class IRI="#MAC_Address"/>
@@ -109,16 +71,7 @@ https://github.com/nsakhnini/personal_pollution_exposure_API</Literal>
         <Class IRI="#Microenvironment_Value"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Mouth"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Neck"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Noise"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Nose"/>
     </Declaration>
     <Declaration>
         <Class IRI="#PM2.5"/>
@@ -154,22 +107,13 @@ https://github.com/nsakhnini/personal_pollution_exposure_API</Literal>
         <Class IRI="#Smartphone"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Thigh"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Timestamp"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Top"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Type"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Unit"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Upper_Arm"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Value"/>
@@ -185,9 +129,6 @@ https://github.com/nsakhnini/personal_pollution_exposure_API</Literal>
     </Declaration>
     <Declaration>
         <Class IRI="#Weight"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Wrist"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#latitude"/>
@@ -217,13 +158,43 @@ https://github.com/nsakhnini/personal_pollution_exposure_API</Literal>
         <Class IRI="https://www.w3.org/2005/Incubator/ssn/ssnx/ssnDeployment"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hasAirTemperature"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasComputer"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasDeployment"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hasLatitude"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLongitude"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMEConfidence"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasMaterial"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMicroEnvironment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasNoise"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPM"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasWeatherPhenomenon"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasWindDirection"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasWindSpeed"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isSensor"/>
@@ -253,20 +224,8 @@ https://github.com/nsakhnini/personal_pollution_exposure_API</Literal>
         <DataProperty IRI="#hasWidth"/>
     </Declaration>
     <SubClassOf>
-        <Class IRI="#Abdomen"/>
-        <Class IRI="#Human_Body_Parts"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Arm"/>
-        <Class IRI="#Human_Body_Parts"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Battery_Life"/>
         <Class IRI="#Computing"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Chest"/>
-        <Class IRI="#Human_Body_Parts"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Components"/>
@@ -285,56 +244,16 @@ https://github.com/nsakhnini/personal_pollution_exposure_API</Literal>
         <Class IRI="#MicroEnvironment"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Ears"/>
-        <Class IRI="#Head"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Exposure_Context"/>
         <Class IRI="#Exposure_Object"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Eyes"/>
-        <Class IRI="#Head"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Fingers"/>
-        <Class IRI="#Hand"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Foot"/>
-        <Class IRI="#Leg"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Hand"/>
-        <Class IRI="#Arm"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Head"/>
-        <Class IRI="#Human_Body_Parts"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Human_Body_Association"/>
         <Class IRI="#Wearable_Form_Factor"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Knee"/>
-        <Class IRI="#Leg"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Leg"/>
-        <Class IRI="#Human_Body_Parts"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Location"/>
         <Class IRI="#Exposure_Context"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Lower_Arm"/>
-        <Class IRI="#Arm"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Lower_Leg"/>
-        <Class IRI="#Leg"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#MAC_Address"/>
@@ -349,20 +268,8 @@ https://github.com/nsakhnini/personal_pollution_exposure_API</Literal>
         <Class IRI="#MicroEnvironment"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Mouth"/>
-        <Class IRI="#Head"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Neck"/>
-        <Class IRI="#Head"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Noise"/>
         <Class IRI="#Pollutants"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Nose"/>
-        <Class IRI="#Head"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#PM2.5"/>
@@ -405,16 +312,8 @@ https://github.com/nsakhnini/personal_pollution_exposure_API</Literal>
         <Class IRI="https://www.w3.org/2005/Incubator/ssn/ssnx/ssnDeployment"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Thigh"/>
-        <Class IRI="#Leg"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Timestamp"/>
         <Class IRI="#Exposure_Context"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Top"/>
-        <Class IRI="#Head"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Type"/>
@@ -435,10 +334,6 @@ https://github.com/nsakhnini/personal_pollution_exposure_API</Literal>
     <SubClassOf>
         <Class IRI="#Unit"/>
         <Class IRI="#PM2.5"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Upper_Arm"/>
-        <Class IRI="#Arm"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Value"/>
@@ -463,10 +358,6 @@ https://github.com/nsakhnini/personal_pollution_exposure_API</Literal>
     <SubClassOf>
         <Class IRI="#Weight"/>
         <Class IRI="#Wearable_Form_Factor"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Wrist"/>
-        <Class IRI="#Arm"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#latitude"/>
@@ -500,13 +391,6 @@ https://github.com/nsakhnini/personal_pollution_exposure_API</Literal>
         <Class abbreviatedIRI="wthr:WindSpeed"/>
         <Class IRI="#Weather"/>
     </SubClassOf>
-    <DisjointClasses>
-        <Class IRI="#Abdomen"/>
-        <Class IRI="#Arm"/>
-        <Class IRI="#Chest"/>
-        <Class IRI="#Head"/>
-        <Class IRI="#Leg"/>
-    </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#Battery_Life"/>
         <Class IRI="#MAC_Address"/>
@@ -543,28 +427,8 @@ https://github.com/nsakhnini/personal_pollution_exposure_API</Literal>
         <Class IRI="#Value"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#Ears"/>
-        <Class IRI="#Eyes"/>
-        <Class IRI="#Mouth"/>
-        <Class IRI="#Neck"/>
-        <Class IRI="#Nose"/>
-        <Class IRI="#Top"/>
-    </DisjointClasses>
-    <DisjointClasses>
         <Class IRI="#Exposure_Context"/>
         <Class IRI="#Pollutants"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#Foot"/>
-        <Class IRI="#Knee"/>
-        <Class IRI="#Lower_Leg"/>
-        <Class IRI="#Thigh"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#Hand"/>
-        <Class IRI="#Lower_Arm"/>
-        <Class IRI="#Upper_Arm"/>
-        <Class IRI="#Wrist"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#Location"/>
@@ -613,6 +477,10 @@ https://github.com/nsakhnini/personal_pollution_exposure_API</Literal>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAirTemperature"/>
+        <Class IRI="#Timestamp"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasComputer"/>
         <Class IRI="#Computing_Capabilities"/>
     </ObjectPropertyDomain>
@@ -621,8 +489,44 @@ https://github.com/nsakhnini/personal_pollution_exposure_API</Literal>
         <Class IRI="#Sensor"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasLatitude"/>
+        <Class IRI="#Timestamp"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasLongitude"/>
+        <Class IRI="#Timestamp"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMEConfidence"/>
+        <Class IRI="#Timestamp"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasMaterial"/>
         <Class IRI="#Wearable_Form_Factor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMicroEnvironment"/>
+        <Class IRI="#Timestamp"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasNoise"/>
+        <Class IRI="#Timestamp"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPM"/>
+        <Class IRI="#Timestamp"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasWeatherPhenomenon"/>
+        <Class IRI="#Timestamp"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasWindDirection"/>
+        <Class IRI="#Timestamp"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasWindSpeed"/>
+        <Class IRI="#Timestamp"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isSensor"/>
@@ -637,6 +541,10 @@ https://github.com/nsakhnini/personal_pollution_exposure_API</Literal>
         <Class IRI="#Type"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAirTemperature"/>
+        <Class abbreviatedIRI="wthr:AirTemperature"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#hasComputer"/>
         <Class IRI="#Computing"/>
     </ObjectPropertyRange>
@@ -645,8 +553,44 @@ https://github.com/nsakhnini/personal_pollution_exposure_API</Literal>
         <Class IRI="https://www.w3.org/2005/Incubator/ssn/ssnx/ssnDeployment"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasLatitude"/>
+        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#latitude"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasLongitude"/>
+        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#longitude"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMEConfidence"/>
+        <Class IRI="#Confidence"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#hasMaterial"/>
         <Class IRI="#Materials"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMicroEnvironment"/>
+        <Class IRI="#Microenvironment_Value"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasNoise"/>
+        <Class IRI="#Noise"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPM"/>
+        <Class IRI="#PM2.5"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasWeatherPhenomenon"/>
+        <Class abbreviatedIRI="wthr:WeatherPhenomenon"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasWindDirection"/>
+        <Class abbreviatedIRI="wthr:WindDirection"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasWindSpeed"/>
+        <Class abbreviatedIRI="wthr:WindSpeed"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isSensor"/>

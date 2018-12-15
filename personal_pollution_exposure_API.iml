@@ -7,16 +7,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://$USER_HOME$/Desktop/commons-csv-1.6.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
           <root url="jar://$USER_HOME$/Downloads/json-20180813.jar!/" />
@@ -25,7 +16,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/Downloads/aws-java-sdk-1.11.466/third-party/lib" />
@@ -35,7 +26,7 @@
         <jarDirectory url="file://$USER_HOME$/Downloads/aws-java-sdk-1.11.466/third-party/lib" recursive="false" />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
           <root url="jar://$USER_HOME$/Downloads/aws-java-sdk-1.11.466/lib/aws-java-sdk-1.11.466.jar!/" />
@@ -44,5 +35,16 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/Desktop/CS 586 Data and Web Semantics/commons-csv-1.6.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" exported="" name="net.sourceforge.owlapi:owlapi-apibinding:4.0.2" level="project" />
+    <orderEntry type="library" exported="" name="org.slf4j:slf4j-jdk14:1.7.12" level="project" />
   </component>
 </module>

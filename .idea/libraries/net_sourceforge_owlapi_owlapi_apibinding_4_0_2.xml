@@ -1,0 +1,32 @@
+<component name="libraryTable">
+  <library name="net.sourceforge.owlapi:owlapi-apibinding:4.0.2" type="repository">
+    <properties maven-id="net.sourceforge.owlapi:owlapi-apibinding:4.0.2" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/net/sourceforge/owlapi/owlapi-apibinding/4.0.2/owlapi-apibinding-4.0.2.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/net/sourceforge/owlapi/owlapi-api/4.0.2/owlapi-api-4.0.2.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/tukaani/xz/1.5/xz-1.5.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/net/sourceforge/owlapi/owlapi-impl/4.0.2/owlapi-impl-4.0.2.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/net/sourceforge/owlapi/owlapi-parsers/4.0.2/owlapi-parsers-4.0.2.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/net/sourceforge/owlapi/owlapi-oboformat/4.0.2/owlapi-oboformat-4.0.2.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/net/sourceforge/owlapi/owlapi-tools/4.0.2/owlapi-tools-4.0.2.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/net/sourceforge/owlapi/owlapi-fixers/4.0.2/owlapi-fixers-4.0.2.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/net/sourceforge/owlapi/owlapi-rio/4.0.2/owlapi-rio-4.0.2.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/openrdf/sesame/sesame-model/2.7.12/sesame-model-2.7.12.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/openrdf/sesame/sesame-util/2.7.12/sesame-util-2.7.12.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/openrdf/sesame/sesame-rio-api/2.7.12/sesame-rio-api-2.7.12.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/felix/org.osgi.core/1.4.0/org.osgi.core-1.4.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/net/sf/trove4j/trove4j/3.0.3/trove4j-3.0.3.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/18.0/guava-18.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/google/inject/guice/4.0-beta/guice-4.0-beta.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/javax/inject/javax.inject/1/javax.inject-1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/aopalliance/aopalliance/1.0/aopalliance-1.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/google/inject/extensions/guice-multibindings/4.0-beta/guice-multibindings-4.0-beta.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/google/code/findbugs/jsr305/2.0.1/jsr305-2.0.1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/directory/studio/org.apache.commons.io/2.4/org.apache.commons.io-2.4.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/commons-io/commons-io/2.4/commons-io-2.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
